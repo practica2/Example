@@ -3,23 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Página HTML Sencilla</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
     <!-- Contenido de header.html -->
     <header>
-        <h1>Bienvenidos a la pagina web</h1>
+        <h1>Bienvenidos!:D</h1>
     </header>
-    
-    <main>
-        <h2>Introducción</h2>
-        <p>Esta es una página HTML sencilla para cumplir con el merge de la practica</p>
-    </main>
-    
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio ੈ✩‧₊˚</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perfil  ੈ✩‧₊˚</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Musica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comentarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registrate ੈ✩‧₊˚</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 content">
+                <div class="container mt-5">
+                    <h1 class="text-center">₊˚✧[Blog personal]✧˚₊‧</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/archivos.jpg" class="card-img-top" alt="Imagen 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">ꕥ Fototeca </h5>
+                                    <p class="card-text">Compartamos fotos de lo personal!</p>
+                                    <a href="#" class="btn btn-custom">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/musica.jpg" class="card-img-top" alt="Imagen 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">ꕥ Musica </h5>
+                                    <p class="card-text">Lista de exitos musicales a tu gusto!</p>
+                                    <a href="#" class="btn btn-custom">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/perfil.jpg" class="card-img-top" alt="Imagen 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">ꕥ Comentarios </h5>
+                                    <p class="card-text">Comparte tus comentarios más personales!</p>
+                                    <a href="#" class="btn btn-custom">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
     <!-- Contenido de footer.html -->
     <footer>
-        <p>&copy; 2024 Mi Página Web</p>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
