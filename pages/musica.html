@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+      .btn-custom {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .btn-custom:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        /* Estilo para el footer */
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilo para la sidebar */
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-right: 1px solid #dee2e6;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .content {
+            margin-left: 250px; /* Ancho de la sidebar */
+        }
+
+        .list-group-item {
+            background-color: #f8f9fa;
+            border: none;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+
+        .card-title {
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .card-text {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        .youtube-button {
+            background-color: #ffc0cb;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .youtube-button:hover {
+            background-color: #ff69b4;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="col-md-2 d-none d-md-block sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio ੈ✩‧₊˚</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fototeca</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="musica.html">Música</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="comentarios.html">Comentarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Regístrate ੈ✩‧₊˚</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 content">
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Listado de Canciones</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h5 class="card-title">Canción 1</h5>
+                                <p class="card-text">Artista: Artista 1</p>
+                                <button class="youtube-button" onclick="window.location.href='https://www.youtube.com/watch?v=QslJYDX3o8s'">Ver en YouTube</button>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Canción 2</h5>
+                                <p class="card-text">Artista: Artista 2</p>
+                                <button class="youtube-button" onclick="window.location.href='https://www.youtube.com/watch?v=QslJYDX3o8s'">Ver en YouTube</button>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Canción 3</h5>
+                                <p class="card-text">Artista: Artista 3</p>
+                                <button class="youtube-button" onclick="window.location.href='https://www.youtube.com/watch?v=QslJYDX3o8s'">Ver en YouTube</button>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Canción 4</h5>
+                                <p class="card-text">Artista: Artista 4</p>
+                                <button class="youtube-button" onclick="window.location.href='https://www.youtube.com/watch?v=QslJYDX3o8s'">Ver en YouTube</button>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="card-title">Canción 5</h5>
+                                <p class="card-text">Artista: Artista 5</p>
+                                <button class="youtube-button" onclick="window.location.href='https://www.youtube.com/watch?v=QslJYDX3o8s'">Ver en YouTube</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

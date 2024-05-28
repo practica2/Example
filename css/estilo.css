@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ajuste para eliminar el margen predeterminado del body */
+    padding: 0; /* Ajuste para eliminar el relleno predeterminado del body */
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-right: 1px solid #dee2e6;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0; /* Ajuste para asegurarse de que la barra lateral se adhiera al borde superior */
+    width: 250px; /* Ancho de la barra lateral */
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 0; /* Ajuste para asegurarse de que la barra lateral se adhiera al borde superior */
+}
+
+.nav-link {
+    color: #333; /* Color del texto del enlace */
+}
+
+.content {
+    margin-left: 250px; /* Ancho de la barra lateral */
+    padding-top: 20px; /* Ajuste para dejar espacio para la barra lateral */
+}
+
+.list-group-item {
+    background-color: #f8f9fa; /* Color de fondo de los elementos de la lista */
+    border: none; /* Eliminar borde de los elementos de la lista */
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
